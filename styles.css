@@ -1,5 +1,35 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px Arial,sans-serif;color:#17212b;line-height:1.6}header{height:76px;padding:0 6vw;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#fffffff5;z-index:5;border-bottom:1px solid #e7ebee}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:#0B2D4D}.mark{width:38px;height:38px;border:2px solid #0B2D4D;border-radius:50%;display:grid;place-items:center;color:#D4AF37;font:700 22px Georgia}.brand b{display:block;letter-spacing:.14em}.brand small{display:block;font-size:9px;letter-spacing:.08em}nav{display:flex;gap:25px}nav a{color:#0B2D4D;text-decoration:none;font-weight:bold;font-size:13px}#menu{display:none;border:0;background:none;font-size:24px}.hero{min-height:680px;background:linear-gradient(120deg,#061b2d,#0B2D4D);color:white;padding:100px 7vw;display:grid;grid-template-columns:1.4fr .6fr;gap:8vw;align-items:center}.eyebrow{font-size:11px;font-weight:bold;letter-spacing:.18em;color:#D4AF37}.hero h1,h2{font:400 clamp(36px,5vw,70px)/1.05 Georgia,serif;margin:15px 0 25px}.hero h1 em{color:#D4AF37;font-style:normal}.lead{max-width:720px;color:#d9e4ec;font-size:19px}.buttons{display:flex;gap:12px;margin:35px 0}.buttons a{padding:13px 18px;text-decoration:none;font-weight:bold;font-size:13px}.primary{background:#D4AF37;color:#071f35}.secondary{border:1px solid #8095a6;color:white}.motto{margin-top:50px;letter-spacing:.15em;font-size:11px}aside{border:1px solid #ffffff33;padding:28px}aside ol{padding-left:25px}aside li{padding:12px 0;border-bottom:1px solid #ffffff20}.intro,.services,.dark,.approach,.founder,.contact,.about{padding:85px 7vw}h2{color:#0B2D4D;font-size:clamp(34px,4vw,54px)}.intro>p:not(.eyebrow){max-width:850px;color:#66727c;font-size:18px}.four{display:grid;grid-template-columns:repeat(4,1fr);margin-top:45px;border-top:1px solid #dde3e7}.four div{padding-top:20px}.four b{display:block;color:#0B2D4D;font:28px Georgia}.four span{color:#69757e;font-size:13px}.about{background:#f6f3eb;display:grid;grid-template-columns:1fr 1fr;gap:8vw}.about p:not(.eyebrow),.founder p{color:#59656e}.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}.cards article{border:1px solid #dde3e7;padding:30px}.cards article:last-child{grid-column:1/-1}.cards i{color:#D4AF37;font:18px Georgia}.cards h3{color:#0B2D4D}.cards p{color:#65717d}.dark{background:#071f35;color:white}.dark h2{color:white}.problems{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#385268}.problems div{background:#071f35;padding:30px}.problems p{color:#c8d5df}.steps{display:grid;grid-template-columns:repeat(6,1fr);margin-top:40px}.steps span{border-top:2px solid #D4AF37;padding:20px 8px;color:#D4AF37}.steps b{color:#0B2D4D}.approach{background:#f6f3eb}.founder{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:center}.founder blockquote{font:30px Georgia;color:#0B2D4D;border-left:3px solid #D4AF37;padding-left:25px}.contact{background:#0B2D4D;color:white;display:grid;grid-template-columns:1fr 1fr;gap:8vw}.contact h2{color:white}.contactbox{background:white;padding:25px}.contactbox a{display:block;padding:15px 0;border-bottom:1px solid #dde3e7;text-decoration:none;color:#0B2D4D}.contactbox small{display:block;color:#b28d1f;letter-spacing:.15em;font-weight:bold}.contactbox p{color:#65717d;font-size:13px}footer{background:#061827;color:#a9b8c4;padding:32px 7vw;display:flex;justify-content:space-between;gap:20px;font-size:12px}footer b{color:white;letter-spacing:.14em}@media(max-width:800px){nav{display:none;position:absolute;top:76px;left:0;right:0;background:white;padding:22px 7vw;flex-direction:column}nav.open{display:flex}#menu{display:block}.hero,.about,.founder,.contact{grid-template-columns:1fr}.hero{padding-top:70px}.four,.cards,.problems{grid-template-columns:1fr}.cards article:last-child{grid-column:auto}.steps{grid-template-columns:repeat(2,1fr)}.buttons{flex-direction:column;align-items:flex-start}footer{flex-direction:column}}
-/* Approved Vantage brand artwork */
-.brand{display:flex;align-items:center;text-decoration:none;min-width:250px}
-.brand-logo{display:block;width:250px;max-width:42vw;height:auto;object-fit:contain}
-@media (max-width:700px){.brand{min-width:0}.brand-logo{width:185px;max-width:60vw}}
+
+/* Vantage V2 — approved logo fit. Artwork itself is unchanged. */
+header{
+  height:108px;
+  padding:0 6vw;
+  overflow:visible;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  width:176px;
+  min-width:176px;
+  height:100%;
+  overflow:hidden;
+  text-decoration:none;
+}
+.brand-logo{
+  display:block;
+  width:176px;
+  height:auto;
+  max-width:none;
+  object-fit:contain;
+}
+@media(max-width:800px){
+  header{height:92px;padding:0 5vw}
+  nav{top:92px}
+  .brand{width:145px;min-width:145px}
+  .brand-logo{width:145px}
+}
+@media(max-width:380px){
+  .brand{width:132px;min-width:132px}
+  .brand-logo{width:132px}
+}
